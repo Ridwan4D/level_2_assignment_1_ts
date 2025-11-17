@@ -65,3 +65,4 @@ console.log(
 // if one of the required properties is missing, it will throw an error
 
 ```
+The difference between `js` concept and `ts` concept is syntax and implementation
