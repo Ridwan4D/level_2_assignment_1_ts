@@ -122,14 +122,16 @@ const dev1: Developer = {
   age: 23,
   skills: ["React", "TypeScript"],
 };
+```
 
-//---------- Key Differences ----------
+---------- **Key Differences** ----------
 
-// 1. Type is more flexible → it can define primitives, unions, tuples, etc.
-// 2. Interface is mostly for defining objects.
-// 3. Interface supports declaration merging (can be expanded later), type doesn’t.
+1. Type is more flexible → it can define primitives, unions, tuples, etc.
+2. Interface is mostly for defining objects.
+3. Interface supports declaration merging (can be expanded later), type doesn’t.
 
-// Example of merging in interface:
+Example of merging in interface:
+```
 interface Car {
   model: string;
 }
