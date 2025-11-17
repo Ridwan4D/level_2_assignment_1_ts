@@ -1,4 +1,4 @@
-# Blog about union and intersection types in TypeScript.
+# Blog 1: Union and intersection types in TypeScript.
 
 As a javascript developer we all know conditional operator. There are many kinds of operator but we will talk about two operator and this are: 1. `or (||)` operator, 2. `and (&&)` operator. `Union` and `intersection` of typescript are contain the same concept.
 **let's see with example:**
@@ -66,4 +66,87 @@ console.log(
 
 ```
 The difference between `js` concept and `ts` concept is **syntax and implementation**
+
+
+
+# Blog 2: Difference between Interface and types in typescript.
+To dive in the concept of `interface` and `type alias`, we need to understand why we need them.
+### Both are used to define the shape or structure of and object, but they have some difference.
+
+```javascript
+//---------- Type Alias ----------
+
+// Type is like giving a nickname to a type.
+// You can use it for primitives, unions, intersections, and even objects.
+type User = {
+  name: string;
+  age: number;
+};
+
+const user1: User = {
+  name: "Ridwan",
+  age: 21,
+};
+
+// You can also use union or intersection with types
+type Status = "active" | "inactive"; // union type
+type Employee = User & { job: string }; // intersection with type
+
+const employee1: Employee = {
+  name: "Salman",
+  age: 30,
+  job: "Developer",
+};
+
+//---------- Interface ----------
+
+// Interface is used to define the structure of an object as well, mostly for objects
+// It’s very useful to define contracts in the code, especially for OOP (classes)
+interface Person {
+  name: string;
+  age: number;
+}
+
+const person1: Person = {
+  name: "Imran",
+  age: 25,
+};
+
+// Interfaces can be extended
+interface Developer extends Person {
+  skills: string[];
+}
+
+const dev1: Developer = {
+  name: "Sadia",
+  age: 23,
+  skills: ["React", "TypeScript"],
+};
+
+//---------- Key Differences ----------
+
+// 1. Type is more flexible → it can define primitives, unions, tuples, etc.
+// 2. Interface is mostly for defining objects.
+// 3. Interface supports declaration merging (can be expanded later), type doesn’t.
+
+// Example of merging in interface:
+interface Car {
+  model: string;
+}
+
+interface Car {
+  brand: string;
+}
+
+const myCar: Car = {
+  model: "2024",
+  brand: "Toyota",
+};
+```
+
+
+
+
+
+
 
