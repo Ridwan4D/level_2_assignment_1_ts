@@ -1,7 +1,7 @@
 # Blog about union and intersection types in TypeScript.
 
-As a javascript developer we all know conditional operator. There are many kinds of operator but we will talk about two operator and this are: 1. `or (||)` operator, 2. `and (&&)` operator. Union and intersection of typescript are contain the same concept.
-let's see with example:
+As a javascript developer we all know conditional operator. There are many kinds of operator but we will talk about two operator and this are: 1. `or (||)` operator, 2. `and (&&)` operator. `Union` and `intersection` of typescript are contain the same concept.
+**let's see with example:**
 
 ``` javascript
 //--------------- concept of or and operator -------------
@@ -65,4 +65,5 @@ console.log(
 // if one of the required properties is missing, it will throw an error
 
 ```
-The difference between `js` concept and `ts` concept is syntax and implementation
+The difference between `js` concept and `ts` concept is **syntax and implementation**
+
