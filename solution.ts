@@ -45,7 +45,6 @@ function filterByRating(arr: ArrObj[]): ArrObj[] {
   ));
 }
 
-
 type UserInfo = {
   id: number;
   name: string;
@@ -63,7 +62,6 @@ interface Book {
   publishedYear: number;
   isAvailable: boolean;
 }
-
 const printBookDetails = (book: Book): void => {
   console.log(
     `Title: ${book.title}, Author: ${book.author}, Published: ${
@@ -104,7 +102,6 @@ interface Product {
   quantity: number;
   discount?: number;
 }
-
 const calculateTotalPrice = (products: Product[]): number => {
   const totalOfEachProduct = products.map((product) => {
     const totalPrice = product.price * product.quantity;
@@ -119,4 +116,3 @@ const calculateTotalPrice = (products: Product[]): number => {
   );
   return totalPriceAllProduct;
 };
-
